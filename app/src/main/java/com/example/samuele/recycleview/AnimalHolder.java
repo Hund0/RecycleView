@@ -21,6 +21,9 @@ public class AnimalHolder extends RecyclerView.ViewHolder {
     public void bind(Animal animal){
         this.animal = animal;
         nomeAnimale.setText(this.animal.getName());
+        if(this.animal.getUriImg() != null){
+            imgAnimale.setImageURI(this.animal.getUriImg());
+        }
     }
 
 
